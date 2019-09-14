@@ -2,7 +2,7 @@
  Construct the single-sample network based on partial correlation(P-SSN)
 
 ## construct reference network
-For example,the "construct_reference_network.py" can be used to construct the background network,and the parameter is shown below:
+The "construct_reference_network.py" can be used to construct the background network,and the parameter is shown below:
 
 “construct_reference_network.py” requires "numpy" extensive package.
 
@@ -20,7 +20,7 @@ The file "reference_samples.txt" is the expression profile of reference samples.
 The file "14_samples_data.txt" is a 14 samples expression profile.
 
 
-To construct the P-SSN for the 14 samples, and the results will be put in "reference_network.txt" file:
+For example,to construct the P-SSN for the 14 samples, and the results will be put in "reference_network.txt" file:
 
 python construct_reference_network.py -process=2 -proportion=0.5 -PCC=0.7 -ref=reference_samples.txt  -sample=14_samples_data.txt -out=reference_network.txt
 
@@ -28,7 +28,7 @@ python construct_reference_network.py -process=2 -proportion=0.5 -PCC=0.7 -ref=r
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 ## construct single network
-For example,the "construct_single_network.py" can be used to construct the single-sample network based on partial correlation(P-SSN), and the parameter is shown below:
+The "construct_single_network.py" can be used to construct the single-sample network based on partial correlation(P-SSN), and the parameter is shown below:
 
 The "construct_single_network.py" requires "numpy" and "scipy" extensive package.
 
@@ -47,7 +47,7 @@ The file "background.txt" is the background network for calculating P-SSN.
 The file "14_samples_data.txt" is a 14 samples expression profile, the P-SSNs will be constructed for the 14 samples profile.
 
 
-To construct the P-SSN for the 14 samples, and the results will be put in "target" directory:
+For example,to construct the P-SSN for the 14 samples, and the results will be put in "target" directory:
 
 python construct_single_network.py -proportion=0.5 -process=2 -ref=reference_samples.txt -background=reference_network.txt -sample=14_samples_data.txt -pvalue=0.01 -out=target
 
