@@ -2,7 +2,7 @@
  Construct the single-sample network based on partial correlation(P-SSN)
 
 ## construct reference network
-The "construct_reference_network.py" can be used to construct the background network,and the parameter is shown below:
+For example,the "construct_reference_network.py" can be used to construct the background network,and the parameter is shown below:
 
 “construct_reference_network.py” requires "numpy" extensive package.
 
@@ -28,7 +28,7 @@ python construct_reference_network.py -process=2 -proportion=0.5 -PCC=0.7 -ref=r
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 ## construct single network
-The "construct_single_network.py" can be used to construct the single-sample network based on partial correlation(P-SSN), and the parameter is shown below:
+For example,the "construct_single_network.py" can be used to construct the single-sample network based on partial correlation(P-SSN), and the parameter is shown below:
 
 The "construct_single_network.py" requires "numpy" and "scipy" extensive package.
 
