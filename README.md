@@ -20,7 +20,7 @@ The file "reference_samples.txt" is the expression profile of reference samples.
 The file "14_samples_data.txt" is a 14 samples expression profile.
 
 
-For example,to construct the P-SSN for the 14 samples, and the results will be put in "reference_network.txt" file:
+For example, to construct the P-SSN for the 14 samples, and the results will be put in "reference_network.txt" file:
 
 python construct_reference_network.py -process=2 -proportion=0.5 -PCC=0.7 -ref=reference_samples.txt  -sample=14_samples_data.txt -out=reference_network.txt
 
@@ -47,7 +47,7 @@ The file "background.txt" is the background network for calculating P-SSN.
 The file "14_samples_data.txt" is a 14 samples expression profile, the P-SSNs will be constructed for the 14 samples profile.
 
 
-For example,to construct the P-SSN for the 14 samples, and the results will be put in "target" directory:
+For example, to construct the P-SSN for the 14 samples, and the results will be put in "target" directory:
 
 python construct_single_network.py -proportion=0.5 -process=2 -ref=reference_samples.txt -background=reference_network.txt -sample=14_samples_data.txt -pvalue=0.01 -out=target
 
