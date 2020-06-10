@@ -43,7 +43,7 @@ Options and arguments:
 
 There is a simple example below: 
 The file "reference_samples.txt" is the expression profile of reference samples.
-The file "background.txt" is the background network for calculating P-SSN.
+The file "reference_network.txt" is the background network for calculating P-SSN, "reference_network.txt" is the result of running "construct_reference_network.py" .
 The file "14_samples_data.txt" is a 14 samples expression profile, the P-SSNs will be constructed for the 14 samples profile.
 
 
